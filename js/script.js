@@ -39,10 +39,57 @@ function printQuote() {
 
 const quotes = [
     {
-        quote: "The actual quote",
-        source: "The creator of the quote",
-        citation: "Where the quote comes from",
-        year: "The year of the quote"
+        tag: "historic",
+        quote: "",
+        source: "Frederick Douglass",
+        citation: "Speech on the twenty-fourth anniversary of emancipation in Washington. D.C.",
+        year: "1883"
+    },
+    {
+        tag: "historic",
+        quote: "Herein lies the tragedy of the age: not that men are poor—all men know something of poverty; not that men are wicked—who is good? Not that men are ignorant—what is truth? Nay, but that men know so little of men.",
+        source: "W.E.B. Du Bois",
+        citation: "The Souls of Black Folk"
+    },
+    {
+        tag: "movie",
+        quote: "Bye, Felicia",
+        source: "Craig",
+        citation: "Friday",
+        year: "1995"
+    },
+    {
+        tag: 'humor',
+        quote: "You ever get a bill so high, you try to put it in the light, like it’s gonna change?",
+        source: "Kevin Hart",
+    },
+    {
+        tag: 'movie',
+        quote: "They got the Golden Arches, mine is the Golden Arcs. You see, they got the Big Mac, I got the Big Mick.",
+        source: "Mr. McDowell",
+        citation: "Coming to America",
+        year: "1988"
+    },
+    {
+        tag: 'humor',
+        quote: "Light travels faster than sound. This is why some people appear bright until you hear them speak.",
+        source: "Alan Dundes",
+    },
+    {
+        tag: 'humor',
+        quote: 'My neighbor has two dogs. One of them says to the other, "Woof!" The other replies, "Moo!" The dog is perplexed. "Moo? Why did you say Moo?" The other dog says, "I am trying to learn a foreign language."',
+        source: "Morey Amsterdam",
+    },
+    {
+        tag: 'movie',
+        quote: 'My Mama said "Stupid is what Stupid does."',
+        source: "Forrest Gump",
+        year: "1994"
+    },
+    {
+        tag: 'historic',
+        quote: "Power tends to corrupt, and absolute power corrupts absolutely. Great men are almost always bad men.",
+        source: "Lord Acton"
     }
 ];
 
