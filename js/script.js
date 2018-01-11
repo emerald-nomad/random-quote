@@ -18,6 +18,9 @@ function getRandomColor() {
     return getRandom(colors);
 }
 
+// Will automatically change quote after 30 seconds
+let timeoutHandle = setTimeout(printQuote, 30000);
+
 // Will recieve quote from getRandomQuote(), and render it to the screen.
 function printQuote() {
     let quote = getRandomQuote();
@@ -33,17 +36,19 @@ function printQuote() {
     quote.year ? html += '<span class="year">' + quote.year + '</span>' : '';
     html += '</p>';
     
-    document.body.setAttribute('style','background-color:'+color+';')
+    document.body.setAttribute('style','background-color:'+color+';');
+    document.getElementById('loadQuote').setAttribute('style', 'background-color:' + color + ';')
     document.getElementById('quote-box').innerHTML = html;
+
+    clearTimeout(timeoutHandle);
+    timeoutHandle = setTimeout(printQuote, 30000);
 }
 
 const quotes = [
     {
         tag: "historic",
-        quote: "",
-        source: "Frederick Douglass",
-        citation: "Speech on the twenty-fourth anniversary of emancipation in Washington. D.C.",
-        year: "1883"
+        quote: "It is easier to build strong children than to repair broken men.",
+        source: "Frederick Douglass"
     },
     {
         tag: "historic",
